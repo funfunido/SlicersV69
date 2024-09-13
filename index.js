@@ -15,7 +15,7 @@ const server = http.createServer();
 const bareServer = createBareServer('/bear/');
 const app = express(server);
 const version = packageJson.version;
-const discord = 'https://discord.gg/unblocking';
+const discord = 'https://dummy.com';
 const routes = [
   { route: '/app', file: './static/index.html' },
   { route: '/portal', file: './static/loader.html' },
@@ -78,7 +78,7 @@ server.on("upgrade", (req, socket, head) => {
 });
 
 server.on('listening', () => {
-  console.log(chalk.bgBlue.white.bold(`  Welcome to Doge V4, user!  `) + '\n');
+  console.log(chalk.bgBlue.white.bold(`  Welcome to Skibidi Slicers V4, user!  `) + '\n');
   console.log(chalk.cyan('-----------------------------------------------'));
   console.log(chalk.green('  🌟 Status: ') + chalk.bold('Active'));
   console.log(chalk.green('  🌍 Port: ') + chalk.bold(chalk.yellow(server.address().port)));
@@ -99,7 +99,7 @@ function shutdown(signal) {
   console.log(chalk.red('-----------------------------------------------'));
   console.log(chalk.blue('  Performing graceful exit...'));
   server.close(() => {
-    console.log(chalk.blue('  Doge has been closed.'));
+    console.log(chalk.blue('  Skibidi Slicers has been closed.'));
     process.exit(0);
   });
 }
