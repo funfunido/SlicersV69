@@ -34,7 +34,7 @@ if (blankerCheck === "enabled") {
       iframe.style.border = iframe.style.outline = "none";
       iframe.src = location.href;
       popup.document.body.appendChild(iframe);
-      location.replace("https://www.google.com");
+      location.replace("https://docs.google.com");
     }
   }
 }
@@ -106,8 +106,8 @@ function tabCloak() {
 }
 
 function disableTabCloak() {
-  var newTitle = "Doge | V4";
-  var newIcon = "/assets/img/doge.jpg";
+  var newTitle = "Skibidi | V69";
+  var newIcon = "funfunido/dogedoggy/doge2.jpg";
 
   localStorage.setItem("tabTitle", newTitle);
   localStorage.setItem("tabIcon", newIcon);
