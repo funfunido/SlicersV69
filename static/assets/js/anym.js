@@ -1,6 +1,6 @@
 (function() {
-    var defaultTitle = '(1) SalyteLearn';
-    var defaultIcon = '/assets/img/salyte.jpg';
+    var defaultTitle = 'SkibdiSlicers V69';
+    var defaultIcon = 'funfunido/SlicersV69/doge2.jpg';
     var storedTitle = localStorage.getItem('tabTitle') || defaultTitle;
     var storedIcon = localStorage.getItem('tabIcon') || defaultIcon;
     var icon = document.querySelector('link[rel="icon"]');
